@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reflorestamento e queimadas | ODS 15</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<script src="js/tema.js"></script>
+</head>
+<body>
+<header class="site-header"><div class="container">
+<a class="brand" href="index.html">Vida Terrestre</a>
+<nav class="nav" id="nav" aria-label="Principal">
+<a href="index.html">Início</a><a href="animais.html">Animais</a><a href="flora.html" aria-current="page">Reflorestamento</a></nav>
+<button class="icon-btn" id="tema" type="button">Modo escuro</button>
+<button class="icon-btn menu-btn" id="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+</div></header>
+
+<main><section class="section"><div class="container">
+<h2>Florestas em pé, vida em equilíbrio</h2>
+<p class="lead">Escolha um tema para entender como os ecossistemas terrestres são recuperados, impactados pela exploração e ameaçados pelo fogo, segundo dados do IBAMA, MapBiomas e ICMBio.</p>
+<div class="tabs" role="tablist" aria-label="Temas">
+<button class="tab" role="tab" data-p="reflorestamento" aria-selected="true">Reflorestamento</button>
+<button class="tab" role="tab" data-p="exploracao" aria-selected="false">Exploração florestal</button>
+<button class="tab" role="tab" data-p="queimadas" aria-selected="false">Queimadas</button>
+</div>
+
+<div class="panel" id="reflorestamento" role="tabpanel">
+<h3>Reflorestamento e Restauração Ecológica</h3>
+<video class="media" controls preload="metadata"><source src="videos/Trabalho-vídeo.mp4" type="video/mp4">Seu navegador não reproduz vídeo.</video>
+<p>O reflorestamento vai muito além do plantio isolado de árvores: trata-se de uma estratégia fundamental da <strong>ODS 15</strong> para a recuperação da biodiversidade nativa, a recomposição de corredores ecológicos e a mitigação das mudanças climáticas globais.</p>
+<p>Florestas secundárias e áreas restauradas atuam como essenciais sumidouros de carbono, capturando gás carbônico da atmosfera. Além disso, ecossistemas florestais saudáveis regulam o ciclo hidrológico — garantindo a recarga de aquíferos —, protegem os solos contra processos erosivos severos e evitam o assoreamento de rios e lagos continentais.</p>
+</div>
+
+<div class="panel" id="exploracao" role="tabpanel" hidden>
+<h3>A exploração florestal e seus impactos</h3>
+<p>A extração de recursos florestais pode variar desde o manejo sustentável estrito até a supressão severa de habitat. Conheça as principais modalidades e suas distinções científicas e legais:</p>
+<details open><summary>Manejo Florestal Sustentável (Exploração Seletiva)</summary><div><img src="img/FOTO1-650.png" alt="Manejo florestal sustentável"><p>Regulamentado por órgãos ambientais como o IBAMA, consiste na retirada planejada apenas de árvores adultas específicas, permitindo que a floresta mantenha sua capacidade de regeneração natural, preserve o dossel e conserve a fauna local.</p></div></details>
+<details><summary>Desmatamento em Larga Escala</summary><div><img src="img/FOTO2-650.png" alt="Desmatamento em larga escala"><p>Supressão total da vegetação nativa para conversão do solo em pastagens ou agricultura intensiva. Carrega consequências drásticas, como a fragmentação de habitats, perda irreversível de biodiversidade endêmica e degradação climática regional.</p></div></details>
+<details><summary>Exploração Ilegal de Madeira</summary><div><img src="img/FOTO3-650.png" alt="Extração ilegal de madeira"><p>Atividade clandestina realizada fora dos planos de manejo aprovados. Frequentemente associada à abertura ilegal de estradas em áreas protegidas e terras indígenas, fragiliza o ecossistema e estimula crimes ambientais correlatos.</p></div></details>
+</div>
+
+<div class="panel" id="queimadas" role="tabpanel" hidden>
+<h3>O impacto crítico das queimadas</h3>
+<video class="media" controls preload="metadata"><source src="videos/Trabalho-vídeo-2.mp4" type="video/mp4">Seu navegador não reproduz vídeo.</video>
+<p>O fogo recorrente nos biomas brasileiros — como Cerrado, Pantanal e Amazônia — altera profundamente a dinâmica ecológica, transformando sumidouros de carbono em emissores líquidos de gases de efeito estufa.</p>
+<div class="alert"><strong>Consequências severas:</strong> perda drástica de fauna e flora (incluindo espécies ameaçadas listadas pelo ICMBio), empobrecimento químico e físico do solo, e liberação de grandes volumes de material particulado que afetam diretamente a saúde respiratória humana.</div>
+<h3>Incêndios de Origem Natural</h3>
+<div class="split"><img src="img/FOTO4.png" alt="Incêndio natural"><p>Desencadeados majoritariamente por descargas elétricas atmosféricas (raios) em períodos de estiagem prolongada e baixa umidade relativa do ar, comuns em ecossistemas adaptados ao fogo, embora hoje potencializados pelas mudanças climáticas.</p></div>
+<h3>Incêndios de Origem Antrópica (Humana)</h3>
+<div class="split"><video controls preload="metadata"><source src="videos/Trabalho-vídeo-3.mp4" type="video/mp4"></video><p>Causados direta ou indiretamente pela ação humana, seja no uso tradicional do fogo para limpeza de pastagens que foge ao controle, ou por ações criminosas voltadas à grilagem de terras e especulação imobiliária.</p></div>
+<h3>O Legado Ecológico do Fogo</h3>
+<div class="split"><video controls preload="metadata"><source src="videos/Trabalho-vídeo-4.mp4" type="video/mp4"></video><p>O pós-fogo deixa cicatrizes profundas na paisagem: mortalidade de árvores de grande porte, destruição de ninhos e tocas, interrupção de teias alimentares e aumento exponencial da vulnerabilidade da floresta a novos incêndios.</p></div>
+</div>
+
+</div></section></main>
+
+<footer class="site-footer"><div class="container">ODS 15: Vida Terrestre. Projeto educativo. Fontes oficiais consultadas: Livro Vermelho (ICMBio), IUCN, IBAMA e MapBiomas.</div></footer>
+<button class="btn to-top" id="top" type="button">Topo</button>
+<script src="js/data.js"></script><script src="js/main.js"></script><script src="js/flora.js"></script>
+</body></html>

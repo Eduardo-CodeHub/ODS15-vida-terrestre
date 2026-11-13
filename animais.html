@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Animais em risco | ODS 15</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<script src="js/tema.js"></script>
+</head>
+<body>
+<header class="site-header"><div class="container">
+<a class="brand" href="index.html">Vida Terrestre</a>
+<nav class="nav" id="nav" aria-label="Principal">
+<a href="index.html">Início</a><a href="animais.html" aria-current="page">Animais</a><a href="flora.html">Reflorestamento</a></nav>
+<button class="icon-btn" id="tema" type="button">Modo escuro</button>
+<button class="icon-btn menu-btn" id="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+</div></header>
+<main><section class="section"><div class="container">
+<h2>Animais em risco de extinção</h2>
+<p class="lead">Vulnerável (VU): risco de extinção na natureza. Em perigo (EN): risco alto. Criticamente em perigo (CR): risco extremamente alto. Clique em um animal para ver os detalhes.</p>
+<input class="search" id="busca" type="search" placeholder="Buscar por nome" aria-label="Buscar animal por nome">
+<div class="filters" id="chips" role="group" aria-label="Filtrar por grau de risco"></div>
+<p class="count" id="count" aria-live="polite"></p>
+<div class="grid" id="grid"></div>
+</div></section></main>
+<dialog id="modal"><button class="btn ghost dlg-close" type="button">Fechar</button><img src="" alt=""><div class="dlg-body"></div></dialog>
+<footer class="site-footer"><div class="container">ODS 15: Vida Terrestre. Projeto educativo. Fontes: Livro Vermelho (ICMBio), IUCN, Ibama.</div></footer>
+<button class="btn to-top" id="top" type="button">Topo</button>
+<script src="js/data.js"></script><script src="js/main.js"></script><script src="js/animais.js"></script>
+</body></html>

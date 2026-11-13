@@ -1,0 +1,31 @@
+:root{--bg:#eef2ec;--surface:#fff;--ink:#14231b;--muted:#4b5d52;--brand:#12372a;--brand-ink:#f3f7f1;--line:#cfd9cc;--leaf:#2f7d4f;--vu:#8a5a00;--en:#a94a0a;--cr:#a4201b;--radius:14px}
+[data-theme=dark]{--bg:#0e1a14;--surface:#16271e;--ink:#e6efe8;--muted:#9fb3a6;--brand:#0a1f17;--brand-ink:#e6efe8;--line:#2a4034;--leaf:#6cc08b;--vu:#e0b04a;--en:#f09352;--cr:#ff8a80}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:18px/1.6 "Source Sans 3",system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3{font-family:Bitter,Georgia,serif;line-height:1.2}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--leaf);outline-offset:2px}
+.container{width:min(1120px,92%);margin:0 auto}
+.section{padding:64px 0}
+.section h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:12px}
+.lead{color:var(--muted);max-width:62ch;margin-bottom:28px}
+.site-header{position:sticky;top:0;z-index:20;background:var(--brand);color:var(--brand-ink)}
+.site-header .container{display:flex;align-items:center;gap:16px;min-height:68px}
+.brand{font:700 1.25rem Bitter,serif;text-decoration:none;margin-right:auto}
+.nav{display:flex;gap:6px}
+.nav a{padding:8px 14px;border-radius:999px;text-decoration:none;font-size:1rem}
+.nav a:hover,.nav a[aria-current=page]{background:rgba(255,255,255,.14)}
+.icon-btn{background:none;border:1px solid rgba(255,255,255,.4);color:inherit;border-radius:999px;padding:6px 12px;cursor:pointer;font:inherit;font-size:.95rem}
+.menu-btn{display:none}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;border:2px solid var(--leaf);background:var(--leaf);color:#fff;font:600 1rem inherit;text-decoration:none;cursor:pointer}
+.btn.ghost{background:transparent;color:inherit;border-color:currentColor}
+.site-footer{background:var(--brand);color:var(--brand-ink);padding:32px 0;font-size:.95rem}
+.to-top{position:fixed;right:18px;bottom:18px;display:none}
+.to-top.show{display:block}
+@media(max-width:700px){
+ .menu-btn{display:block}
+ .nav{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;background:var(--brand);padding:10px 4%}
+ .nav.open{display:flex}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
