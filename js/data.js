@@ -1,5 +1,3 @@
-// Conteúdo do site. Para atualizar informações, edite apenas este arquivo.
-// ATENÇÃO: confira os graus de risco (VU/EN/CR) no Livro Vermelho do ICMBio e na lista da IUCN antes de publicar.
 window.ODS15 = {
   pasta: 'img/',
   animais: [
